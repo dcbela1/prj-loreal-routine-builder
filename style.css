@@ -286,9 +286,9 @@ body {
 
 .msg.ai {
   margin-right: auto;
-  background: #222;
-  border: 1px solid #555;
-  color: #fff;
+  background: #dcdcdc;   /* medium silver bubble */
+  border: 1px solid #c0c0c0;
+  color: #222;
 }
 
 .msg.system {
