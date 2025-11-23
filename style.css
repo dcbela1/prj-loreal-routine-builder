@@ -269,3 +269,50 @@ body {
   border-radius: 8px;
   color: white;
 }
+ /* highlight a selected product card */
+.product-card.selected {
+  border: 2px solid #ff003b;        /* L'Oréal red */
+  box-shadow: 0 0 0 2px #ff003b33;
+}
+
+/* show category tag + description nicely */
+.category-tag {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #999;
+  margin-bottom: 6px;
+}
+
+.product-description {
+  font-size: 12px;
+  color: #555;
+  margin-top: 6px;
+}
+
+/* selected products pills */
+.selected-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #000;
+  color: #fff;
+  font-size: 13px;
+}
+
+.selected-pill .pill-remove {
+  border: none;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.selected-empty {
+  font-size: 14px;
+  color: #666;
+}
+ 
