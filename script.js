@@ -314,3 +314,16 @@ window.addEventListener("DOMContentLoaded", async () => {
     `;
   }
 });
+
+// === RTL Toggle ===
+const rtlBtn = document.getElementById("rtlToggle");
+
+rtlBtn.addEventListener("click", () => {
+  document.body.classList.toggle("rtl");
+
+  if (document.body.classList.contains("rtl")) {
+    rtlBtn.textContent = "Disable RTL";
+  } else {
+    rtlBtn.textContent = "Enable RTL";
+  }
+});
