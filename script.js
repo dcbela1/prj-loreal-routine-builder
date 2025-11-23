@@ -12,7 +12,7 @@ const userInput = document.getElementById("userInput");
 const chatWindow = document.getElementById("chatWindow");
 
 /* Cloudflare Worker URL — replace with YOURS */
-const WORKER_URL = "YOUR_WORKER_URL_HERE";
+const WORKER_URL = "https://lingering-cherry-b621.dcbela.workers.dev";
 
 /* Holds selected products */
 let selectedProducts = [];
