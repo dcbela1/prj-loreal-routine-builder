@@ -207,22 +207,24 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 6px 10px;
+  padding: 6px 12px;
   border-radius: 999px;
-  background: #000;
-  color: #fff;
+  background: #dcdcdc;      /* metallic silver */
+  color: #222;              /* dark text for contrast */
   font-size: 13px;
+  border: 1px solid #bfbfbf; /* subtle chrome border */
+  box-shadow: inset 0 1px 2px rgba(255,255,255,0.6),
+              0 2px 4px rgba(0,0,0,0.15);
 }
 
 .selected-pill .pill-remove {
   border: none;
   background: transparent;
-  color: #fff;
+  color: #444;              /* not too harsh */
   cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1;
 }
-
 /* Generate button */
 .generate-btn {
   width: 100%;
@@ -286,9 +288,9 @@ body {
 
 .msg.ai {
   margin-right: auto;
-  background: #dcdcdc;   /* medium silver bubble */
-  border: 1px solid #c0c0c0;
-  color: #222;
+  background: #222;
+  border: 1px solid #555;
+  color: #fff;
 }
 
 .msg.system {
