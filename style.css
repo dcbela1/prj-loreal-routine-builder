@@ -253,3 +253,19 @@ body {
 .generate-btn i {
   margin-right: 8px;
 }
+.msg-user {
+  background: #e3a535;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  color: white;
+  text-align: right;
+}
+
+.msg-ai {
+  background: #ff003b;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  color: white;
+}
