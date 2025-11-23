@@ -396,3 +396,46 @@ body {
     height: 220px;
   }
 }
+
+/* ==== RTL  ==== */
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.rtl .products-grid {
+  direction: rtl;
+}
+
+.rtl .selected-pill {
+  flex-direction: row-reverse;
+}
+
+.rtl .chat-window {
+  direction: rtl;
+}
+
+.rtl .msg.user {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.rtl .msg.ai {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.rtl-btn {
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 10px;
+  background: #e3a535;
+  border: none;
+  cursor: pointer;
+  margin-top: 8px;
+  color: #fff;
+}
+
+.rtl-btn:hover {
+  background: #c98f29;
+}
