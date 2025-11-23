@@ -316,3 +316,27 @@ body {
   color: #666;
 }
  
+.filter-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.filter-row label {
+  font-weight: bold;
+  color: #333;
+}
+
+#categoryFilter {
+  padding: 8px;
+  font-size: 14px;
+}
+
+#productSearch {
+  flex: 1;
+  padding: 8px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
