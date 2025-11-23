@@ -397,7 +397,7 @@ body {
   }
 }
 
-/* ==== RTL  ==== */
+/* ==== RTL TOGGLE ==== */
 .rtl {
   direction: rtl;
   text-align: right;
