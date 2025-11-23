@@ -2,6 +2,7 @@
 //  DOM ELEMENTS
 // ===============================
 const categoryFilter = document.getElementById("categoryFilter");
+const productSearch = document.getElementById("productSearch");
 const productsContainer = document.getElementById("productsContainer");
 const selectedProductsList = document.getElementById("selectedProductsList");
 const generateBtn = document.getElementById("generateRoutine");
@@ -128,6 +129,47 @@ categoryFilter.addEventListener("change", () => {
   const filtered = allProducts.filter((p) => p.category === category);
   renderProductsGrid(filtered);
 });
+
+// ===============================
+//  PRODUCT SEARCH
+// ===============================
+productSearch.addEventListener("input", () => {
+  applyFilters();
+});
+categoryFilter.addEventListener("change", () => {
+  applyFilters();
+});
+
+// ===============================
+//  HELPER FUNCTION
+// ===============================
+function applyFilters() {
+  const category = categoryFilter.value;
+  const term = productSearch.value.trim().toLowerCase();
+
+  let filtered = allProducts;
+
+  if (category) {
+    filtered = filtered.filter((p) => p.category === category);
+  }
+
+  if (term) {
+    filtered = filtered.filter((p) => {
+      const haystack = (
+        p.name +
+        " " +
+        p.brand +
+        " " +
+        p.category +
+        " " +
+        p.description
+      ).toLowerCase();
+      return haystack.includes(term);
+    });
+  }
+
+  renderProductsGrid(filtered);
+}
 
 // ===============================
 //  SELECT / UNSELECT PRODUCTS
